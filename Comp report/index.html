@@ -1,0 +1,42 @@
+<!-- create a system where a user can:
+        - access and view entire inventory 
+        - add items to inventory
+        - remove items from the inventory -->
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Inventory System</title>
+            <meta charset="UTF-8">
+            <meta name="viewpoint" content="iwidth=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" conten="ie=edge">
+            <link href="style.css" rel="stylesheet">
+        </head>
+
+        <body>
+            <div>
+                <h1 id="heading">Inventory Management System</h1>
+            </div>
+                <label>Item Make: </label>
+                <input type="text" id="make">
+                <br>
+                <label>Item Model: </label>
+                <input type="text" id="model">
+                <br>
+                <label>Item Cost: </label>
+                <input type="number" min="0" id="cost">
+                <br>
+                <button type="button" onclick="registerItem();">Add to Inventory</button> 
+            </div>
+
+            <div id="inventoryList" class="item-list">
+                <h3 class="item-list">Current Inventory</h3>
+                <ul class="item-list" id="inventory">
+                    
+                </ul>
+            </div>
+
+            <script src="app.js"></script>
+            <script src="inventory.js"></script>
+        </body>
+    </html>
